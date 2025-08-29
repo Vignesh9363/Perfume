@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Luxebloom — Perfume Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- defer script so DOM is available -->
+  <script src="script.js" defer></script>
+</head>
+<header class="navbar">
+  <div class="logo">
+    <img src="images/logo.png" alt="ScentVerse Logo">
+    <h1>Luxebloom</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#collections">Shop</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to <span class="brand">LuxeBloom</span></h1>
+      <p class="tagline">Your luxury hub for perfumes — one place, many brands.</p>
+
+      <!-- Search -->
+      <div class="search-wrap">
+        <form class="search-bar" onsubmit="return false;" aria-label="Search perfumes">
+          <input id="searchInput" type="text" placeholder="Search perfumes, brands, or notes..." autocomplete="off" />
+          <button id="searchBtn" type="submit">Search</button>
+        </form>
+        <ul id="suggestions" role="listbox" aria-label="Search suggestions"></ul>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="#collections" class="btn btn-primary">Explore Collections</a>
+        <a href="#brands" class="btn btn-secondary">Browse Brands</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 2: Collections -->
+  <section class="collections" id="collections">
+    <div class="container">
+      <h2>Our Signature Collections</h2>
+      <p class="subtitle">Handpicked fragrances crafted for every mood.</p>
+
+      <div class="collection-grid">
+        <div class="collection-card">
+          <img src="images/vikki1.jpg" alt="Luxury Perfumes">
+          <h3>Luxury</h3>
+          <a href="https://in.ajmal.com/products/amir-one-edp-50ml-long-lasting-scent-spray-oudhy-perfume-gift-for-unisex/?srsltid=AfmBOoquhVg_Jh2xOGM6qrWYPfjymIKkmHJq8sXfgU3cTML4xV0gyAfO" class="btn btn-secondary">Try Now</a>
+          <p>Exclusive high-end scents for special occasions.</p>
+        </div>
+
+        <div class="collection-card">
+          <img src="images/vikki2.jpg" alt="Everyday Elegance">
+          <h3>Everyday Elegance</h3>
+          <a href="https://www.versace.com/in/en/men/accessories/fragrances-body-care/eros/" class="btn btn-secondary">Try Now</a>
+          <p>Light and versatile fragrances for daily wear.</p>
+        </div>
+
+        <div class="collection-card">
+          <img src="images/vikki3.jpeg" alt="Limited Editions">
+          <h3>Limited Editions</h3>
+          <a href="https://myop.in/products/marshmallow-fluff" class="btn btn-secondary">Try Now</a>
+          <p>Rare creations available only for a short time.</p>
+        </div>
+
+        <div class="collection-card">
+          <img src="images/vikki7.jpg" alt="Bestsellers">
+          <h3>Bestsellers</h3>
+          <a href="https://www.chanel.com/in/fragrance/p/107360/bleu-de-chanel-eau-de-parfum-spray/" class="btn btn-secondary">Try Now</a>
+          <p>Our most loved perfumes, adored worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED (Section 3) -->
+  <section class="featured" id="featured">
+    <div class="featured-container">
+      <div class="featured-image">
+        <img src="images/vikki10.jpg" alt="Featured Perfume">
+      </div>
+      <div class="featured-content">
+        <h2>Perfume of the Month</h2>
+        <h3>Eternal Bloom</h3>
+        <p>A timeless blend of jasmine, rose, and warm amber that awakens the senses.</p>
+        <p class="price">$120.00</p>
+        <a href="https://ardaljannah.com/cart/" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINDER (Section 4) -->
+  <section class="finder" id="finder">
+    <div class="finder-container">
+      <h2>Find Your Perfect Scent</h2>
+      <p class="subtitle">Not sure which fragrance matches your personality? Take our quick quiz and discover the perfume made for you.</p>
+      <a href="#quiz" class="btn btn-primary">Start the Quiz</a>
+    </div>
+  </section>
+
+  <!-- STORY (Section 5) -->
+  <section class="story" id="about">
+    <div class="story-container">
+      <div class="story-image">
+        <img src="images/vikki6.jpg" alt="Perfume Crafting">
+      </div>
+      <div class="story-content">
+        <h2>Our Story</h2>
+        <p>Every fragrance we create is a work of art, born from passion and perfected through time. From the first drop of essential oil to the final touch of elegance, our perfumes embody luxury and lasting memories.</p>
+        <a href="#collections" class="btn btn-secondary">Discover More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS (Section 6) -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials-container">
+      <h2>What Our Customers Say</h2>
+      <p class="subtitle">Loved by perfume enthusiasts around the world.</p>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>"The scent is simply divine! I’ve never received so many compliments before."</p>
+          <h4>- Sophia M.</h4>
+        </div>
+
+        <div class="testimonial-card">
+          <p>"Luxury bottled to perfection. Every detail speaks of quality and elegance."</p>
+          <h4>- Daniel R.</h4>
+        </div>
+
+        <div class="testimonial-card">
+          <p>"I found my signature scent here. It feels like it was made just for me."</p>
+          <h4>- Aisha K.</h4>
+        </div>
+
+        <div class="testimonial-card">
+          <p>"Fast delivery, beautiful packaging, and the fragrance lasts all day. Perfect!"</p>
+          <h4>- Liam P.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIPTION (Section 7) -->
+  <section class="subscription" id="subscription">
+    <div class="subscription-container">
+      <h2>Join the Scent Circle</h2>
+      <p class="subtitle">Be the first to know about exclusive launches, limited editions, and special offers.</p>
+
+      <form class="subscription-form" id="subscribeForm">
+        <input id="subscribeEmail" type="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+
+      <p class="note">✨ Members also receive personalized fragrance recommendations.</p>
+    </div>
+  </section>
+
+  <!-- PRODUCTS (used by the search to locate items) -->
+  <section id="products" class="products">
+    <div class="container">
+      <h2>All Products</h2>
+      <div class="product-grid">
+        <!-- Each product MUST have data-name exactly as you'd like it searchable -->
+        <div class="product" data-name="Dior Sauvage">
+          <img src="images/vik3.jpg" alt="Dior Sauvage">
+          <h3>Dior Sauvage</h3>
+          <a href="https://www.dior.com/en_int/beauty/sauvage-fragrance" class="btn btn-secondary">Get Now</a>
+        </div>
+
+        <div class="product" data-name="Chanel No.5">
+          <img src="images/vikki6.jpg" alt="Chanel No.5">
+          <h3>Chanel No.5</h3>
+          <a href="https://www.chanel.com/in/fragrance/" class="btn btn-secondary">Get Now</a>
+        </div>
+
+        <div class="product" data-name="Gucci Bloom">
+          <img src="images/gb.jpg" alt="Gucci Bloom">
+          <h3>Gucci Bloom</h3>
+          <a href="https://www.gucci.com/us/en/st/capsule/gucci-bloom?srsltid=AfmBOoqhq8mGM2NHCC65L8KVPW5N0qReK4IqejvewKLvXckhM1cS4v3Y" class="btn btn-secondary">Get Now</a>
+        </div>
+
+        <div class="product" data-name="Tom Ford Black Orchid">
+          <img src="images/tobo.jpg" alt="Tom Ford Black Orchid">
+          <h3>Tom Ford Black Orchid</h3>
+          <a href="https://www.tomfordbeauty.com/products/fragrance" class="btn btn-secondary">Get Now</a>
+        </div>
+
+        <div class="product" data-name="Creed Aventus">
+          <img src="images/ca.jpg" alt="Creed Aventus">
+          <h3>Creed Aventus</h3>
+          <a href="https://www.creedfragrance.com/" class="btn btn-secondary">Get Now</a>
+          
+        </div>
+
+        <div class="product" data-name="Jo Malone Peony & Blush Suede">
+          <img src="images/jm.jpg" alt="Jo Malone Peony & Blush Suede">
+          <h3>Jo Malone Peony & Blush Suede</h3>
+          <a href="https://www.jomalone.com/" class="btn btn-secondary">Get Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> ScentVerse. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
